@@ -14,6 +14,11 @@ public static class SortHelpers
         return leftValue > rightValue;
     }
 
+    public static bool IsGreaterOrEqual(int leftValue, int rightValue)
+    {
+        return IsGreater(leftValue, rightValue) || leftValue == rightValue;
+    }
+
     public static bool IsLess(int leftValue, int rightValue)
     {
         return leftValue < rightValue;

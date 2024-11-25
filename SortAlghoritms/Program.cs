@@ -4,12 +4,13 @@ class Program
 {
     public static void Main(string[] args)
     {
-        int[] array = { 2, 1, 8, 3, 5, 9, 1 };
+        Console.WriteLine("*--------*");
+        int[] array = { 789, 987, 456, 654, 0, 123, 321, 79, 56, 12, 3, 0 };
         
         PrintArray(array);
-
+        
         Console.WriteLine("*--------*");
-        InsertSort.Sort(array);
+        RadixSort.Sort(array);
         
         PrintArray(array);
     }
