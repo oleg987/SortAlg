@@ -1,12 +1,10 @@
-﻿namespace SortAlghoritms;
+﻿namespace SortAlghoritms.Sort;
 
 public static class SortHelpers
 {
     public static void Swap(int[] array, int leftIndex, int rightIndex)
     {
-        int temp = array[leftIndex];
-        array[leftIndex] = array[rightIndex];
-        array[rightIndex] = temp;
+        (array[leftIndex], array[rightIndex]) = (array[rightIndex], array[leftIndex]);
     }
     
     public static bool IsGreater(int leftValue, int rightValue)

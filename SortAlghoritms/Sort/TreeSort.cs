@@ -1,4 +1,4 @@
-﻿namespace SortAlghoritms;
+﻿namespace SortAlghoritms.Sort;
 
 // Need binary tree structure
 public static class TreeSort

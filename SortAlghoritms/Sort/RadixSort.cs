@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace SortAlghoritms;
+﻿namespace SortAlghoritms.Sort;
 
 public static class RadixSort
 {
@@ -40,7 +38,7 @@ public static class RadixSort
 
         foreach (var value in array)
         {
-            int currentLength = value == 0 ? 1 : (int)Math.Log10(value);
+            int currentLength = value == 0 ? 1 : (int)Math.Log10(value) + 1;
 
             if (maxLength < currentLength)
             {

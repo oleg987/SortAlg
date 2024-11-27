@@ -1,4 +1,4 @@
-﻿namespace SortAlghoritms;
+﻿namespace SortAlghoritms.Sort;
 
 // Need Heap structure
 public static class HeapSort

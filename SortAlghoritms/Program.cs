@@ -1,18 +1,24 @@
-﻿namespace SortAlghoritms;
+﻿using SortAlghoritms.DataStructures.LinkedLists;
+
+namespace SortAlghoritms;
 
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("*--------*");
-        int[] array = { 789, 987, 456, 654, 0, 123, 321, 79, 56, 12, 3, 0 };
+        var d = new Dictionary<int, int>();
+
+        d[1] = 1;
+        d[1] = 2;
         
-        PrintArray(array);
+        var list = new LinkedList();
         
-        Console.WriteLine("*--------*");
-        RadixSort.Sort(array);
-        
-        PrintArray(array);
+        list.Add(1);
+        list.Add(2);
+        list.Add(3);
+        list.Insert(1, 4);
+        list.Insert(0, 0);
+        list.Insert(100,5);
     }
 
     public static void PrintArray(int[] array)

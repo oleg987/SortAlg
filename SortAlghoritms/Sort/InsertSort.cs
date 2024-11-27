@@ -1,4 +1,4 @@
-﻿namespace SortAlghoritms;
+﻿namespace SortAlghoritms.Sort;
 
 public static class InsertSort
 {
